@@ -4,7 +4,7 @@ const $outsideTemp = document.querySelector('#sensors div[name="outsideTemp"]')
 
 const tempSensor = new ArcSensor($tempSensor, {
     gradient: ArcSensor.RAINBOW_GRADIENT,   // имя градиента
-    min: 20,                                // мин значение индикатора
+    min: 15,                                // мин значение индикатора
     max: 30,                                // макс значение индикатора
     measure: '&deg;C',                      // ед измерения
     name: 'Температура',                    // имя датчика
@@ -22,8 +22,8 @@ const humSensor = new ArcSensor($humSensor, {
 
 const outsideSensor = new ArcSensor($outsideTemp, {
     gradient: ArcSensor.RAINBOW_GRADIENT,
-    min: -10,
-    max: 30,
+    min: -5,
+    max: 35,
     measure: '&deg;C',
     name: 'Температура',
     toFixed: 2
