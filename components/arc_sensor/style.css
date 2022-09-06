@@ -1,0 +1,71 @@
+.arc_sensor {
+    --percent: 134;     /* 1 - 134 */
+
+    width: 200px;
+    height: 127px;
+    position: relative;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.arc_sensor .value {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+}
+
+.arc_sensor .name_sensor {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    font-size: .8em;
+    color: #fff;
+    text-align: center;
+}
+
+.arc_sensor .min_value {
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+    font-size: .8em;
+    color: #fff;
+}
+
+.arc_sensor .max_value {
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+    font-size: .8em;
+    color: #fff;
+}
+
+.arc_sensor path {
+    stroke-linecap: round;
+    stroke-width: 6;
+}
+
+.arc_sensor path.grey {
+    stroke: #e7e7e8;
+}
+
+.arc_sensor path.gradient {
+    stroke: url(#gradient1);
+    stroke-dasharray: 134;
+    stroke-dashoffset: 0;
+}
+
+.arc_sensor path.pointer {
+    stroke: rgba(0, 0, 0, .7);
+    stroke-dasharray: 0px, 134px;
+    stroke-width: 3.5px;
+    transition: stroke-dashoffset 1s;
+}
+
+.arc_sensor path.pointer {
+    stroke-dashoffset: var(--percent);
+}

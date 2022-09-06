@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" manifest="app.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- iPhone 5 (640px x 1136px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/apple-launch-640x1136.png">
+    <title>Датчики</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="components/arc_sensor/index.js"></script>
+    <link rel="stylesheet" href="components/arc_sensor/style.css">
+</head>
+<body>
+    <h1>Датчики</h1>
+    <div id="sensors">
+        <div class="block">
+            <h2>Дом</h2>
+            <div class="dataSensors">
+                <div class="arc_sensor" name="temperature"></div>
+                <div class="arc_sensor" name="humidity"></div>
+            </div>
+        </div>
+        
+        <div class="block">
+            <h2>Улица</h2>
+            <div class="dataSensors">
+                <div class="arc_sensor" name="outsideTemp"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

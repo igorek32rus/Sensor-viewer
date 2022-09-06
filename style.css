@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    padding: 20px 0;
+}
+
+#sensors {
+    display: flex;
+    flex-direction: column;
+}
+
+#sensors .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.block h2 {
+    color: #fff;
+    padding-top: 10px;
+}
+
+.block .dataSensors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
