@@ -59,7 +59,8 @@ class ArcSensor {
                 <defs>
                     <linearGradient id="gradient1" x1="0" y1="0" x2="100%" y2="0">
                         <stop offset="0%" stop-color="#0392ce"></stop>
-                        <stop offset="50%" stop-color="#feff35"></stop>
+                        <stop offset="25%" stop-color="#00ff22"></stop>
+                        <stop offset="62%" stop-color="#feff35"></stop>
                         <stop offset="100%" stop-color="#fd5306"></stop>
                     </linearGradient>
                     <linearGradient id="gradient2" x1="0" x2="0" y1="0" y2="1">
